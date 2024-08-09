@@ -13,6 +13,25 @@ body {
     justify-content: center;
 }
 
+.close-button{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin-right: 16px;
+    margin-top: 8px;
+}
+
+.close-button:hover {
+    color: hsl(0, 0%, 75%);
+}
+
 .container {
     min-width: 50%;
     max-width: 80%;
