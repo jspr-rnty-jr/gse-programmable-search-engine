@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-width: 50%;
+    max-width: 80%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 32px 0;
+}
+
+.gs-image-box img {
+    width: 200px;
+    height: 150px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px hsl(0, 0%, 25%);
+}
+
+.gsc-imageResult > .gsc-expansionArea {
+    height: 300px;
+    display: flex !important;
+    justify-content: center;
+    row-gap: 16px;
+    overflow-y: scroll;
+}
+
+.gs-selectedImageResult {
+    height: 150px !important;    
+}
+
+.gs-mobilePreview{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+#___gcse_0, #___gcse_1{
+    width: 80%;
+}
+
+@media only screen and (min-width: 768px){
+    .gsc-imageResult > .gsc-expansionArea {
+        width: 100%;
+        height: 330px; 
+        padding: 32px;
+     }
+
+     .gs-image-box img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .gs-imagePreviewArea {
+        width: 80% !important;
+        height: 250px !important;
+        top: 0%;
+        left: 50% !important;
+        margin-top: 32px;
+        padding: 0 32px;
+        transform: translate(-50%, 0%);
+    }
+}
